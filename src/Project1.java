@@ -8,5 +8,6 @@ public class Project1 {
         driver.manage().window().maximize();
 
         driver.get("https://orangehrm-demo-6x.orangehrmlive.com/client/#/dashboard");
+
     }
 }
