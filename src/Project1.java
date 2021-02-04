@@ -9,11 +9,14 @@ public class Project1 {
 
         driver.get("https://orangehrm-demo-6x.orangehrmlive.com/client/#/dashboard");
 
+<<<<<<< HEAD
 
 
 
 
         Thread.sleep(3000);
         driver.close();
+=======
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
     }
 }

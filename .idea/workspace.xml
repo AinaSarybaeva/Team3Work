@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="adc2d95f-3a18-4f54-a4ca-f97dffecb1e6" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -10,11 +11,20 @@
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="1c34427b-eabd-4955-ba75-fc23e0a01443" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProjectOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Project1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Project1.java" afterDir="false" />
+    </list>
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
@@ -61,6 +71,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -71,6 +83,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -80,12 +93,15 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
   <component name="ProjectFrameBounds">
     <option name="x" value="184" />
     <option name="y" value="23" />
     <option name="width" value="1268" />
     <option name="height" value="804" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -123,10 +139,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+=======
+  <component name="ProjectId" id="1nyq14p4BA9NaP1CMRupdpnArZi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -237,6 +266,30 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c34427b-eabd-4955-ba75-fc23e0a01443" name="Default Changelist" comment="" />
+      <created>1612372460045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612372460045</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+>>>>>>> 46a2ff103606f1e6bfcf6bc2b3e6e88237a31011
   </component>
   <component name="masterDetails">
     <states>
