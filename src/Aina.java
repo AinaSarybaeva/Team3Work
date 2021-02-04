@@ -3,10 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Aina {
@@ -34,27 +31,37 @@ public class Aina {
         List<WebElement> topicList = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[2]"));
         List<WebElement> dateList = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[3]"));
         List<WebElement> userRoles = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[6]"));
-        List<WebElement> attachment = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[7]"));
-       
-        // Print out the map 
+        List<WebElement> attachment = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[7]/i"));
+
+        // handling attachments
+        List<String> attachmentYN = new ArrayList<>();
+        for (var i=0; i<attachment.size(); i++) {
+            if (attachment.get(i).getAttribute("class").contains("disabled")) {     //getting the value from attribute('class')
+                attachmentYN.add("No");
+            } else {
+                attachmentYN.add("Yes");
+            }
+        }
+
         Map<String, List<String>> newsList = new HashMap<>();
 
         for (int i = 0; i < topicList.size(); i++) {
             List<String> temp = new LinkedList<>();
             temp.add(dateList.get(i).getText());
             temp.add(userRoles.get(i).getText());
-            temp.add(attachment.get(i).getText());
+            temp.add(attachmentYN.get(i));
 
             newsList.put(topicList.get(i).getText(), temp);
-
-            for (String key : newsList.keySet()) {
-                System.out.println(String.valueOf(key) + newsList.get(key));
-
-            }
-
         }
-        //  Print out the count of news
+
+        // a. Print out the count of news
         System.out.println("News List: " + newsList.size());
+
+        // b. Print out the map
+        for (String key : newsList.keySet()) {
+            System.out.println(String.valueOf(key) +" | "+ newsList.get(key).get(0) +" | "+ newsList.get(key).get(1) +" | "+ newsList.get(key).get(2));
+        }
+
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 
@@ -69,14 +76,14 @@ public class Aina {
         driver.findElement(By.cssSelector("body[id='tinymce']")).click();
         driver.findElement(By.cssSelector("body[id='tinymce']")).sendKeys("Promotion was awarded to Anna on 1/7/2020");
 
-        // 5. Next button
+        // Next button
         driver.switchTo().parentFrame();
         driver.findElement(By.xpath("//button[@class='modal-action waves-effect action-btn btn right cancel-btn']")).click();
 
-        //6. Check "Publish to - All User Roles"
+        //Publish to all other users
         driver.findElement(By.xpath("//label[contains(text(), 'Publish To - All User Roles')]")).click();
 
-        // 7. Publish
+        //Click publish
         driver.findElement(By.xpath("//button[@class='modal-action waves-effect action-btn btn right cancel-btn publish-btn']")).click();
         Thread.sleep(4000);
 
