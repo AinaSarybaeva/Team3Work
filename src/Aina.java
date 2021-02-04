@@ -35,7 +35,8 @@ public class Aina {
         List<WebElement> dateList = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[3]"));
         List<WebElement> userRoles = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[6]"));
         List<WebElement> attachment = driver.findElements(By.xpath("//tr[@class='dataRaw']/td[7]"));
-
+       
+        // Print out the map 
         Map<String, List<String>> newsList = new HashMap<>();
 
         for (int i = 0; i < topicList.size(); i++) {
@@ -52,19 +53,39 @@ public class Aina {
             }
 
         }
-        // a. Print out the count of news
+        //  Print out the count of news
         System.out.println("News List: " + newsList.size());
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+
+        // 4. Add new News item
+        driver.findElement(By.cssSelector("i[class='large material-icons']")).click();
+        driver.findElement(By.cssSelector("input[id='news_topic']")).sendKeys("Congratulations Anna");
+
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+        driver.switchTo().frame("news_description_ifr");
+
+        driver.findElement(By.cssSelector("body[id='tinymce']")).click();
+        driver.findElement(By.cssSelector("body[id='tinymce']")).sendKeys("Promotion was awarded to Anna on 1/7/2020");
+
+        // 5. Next button
+        driver.switchTo().parentFrame();
+        driver.findElement(By.xpath("//button[@class='modal-action waves-effect action-btn btn right cancel-btn']")).click();
+
+        //6. Check "Publish to - All User Roles"
+        driver.findElement(By.xpath("//label[contains(text(), 'Publish To - All User Roles')]")).click();
+
+        // 7. Publish
+        driver.findElement(By.xpath("//button[@class='modal-action waves-effect action-btn btn right cancel-btn publish-btn']")).click();
+        Thread.sleep(4000);
 
 
 
-        driver.findElement(By.xpath("i[class='large material-icons']")).click();
-        driver.findElement(By.id("news_topic")).sendKeys("Congratulations Anna");
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        
-        
-       
-        
-        
+
+
+
+
         Thread.sleep(3000);
         driver.close();
 
