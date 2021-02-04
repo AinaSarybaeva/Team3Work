@@ -1,8 +1,12 @@
+package src;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.awt.*;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +28,7 @@ public class ProjectOne {
         driver.findElement(By.id("menu_news_viewNewsList")).click();
 
 
-
+        System.out.println("hello");
 
 
 
