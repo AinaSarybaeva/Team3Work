@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.awt.*;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class ProjectOne {
@@ -21,6 +22,9 @@ public class ProjectOne {
         driver.findElement(By.xpath("//a[@class='collapsible-header waves-effect waves-orange']")).click();
         driver.findElement(By.id("menu_news_Announcements")).click();
         driver.findElement(By.id("menu_news_viewNewsList")).click();
+
+
+       // Map<String>, List<String>
 
 
 
