@@ -24,7 +24,6 @@ public class ProjectOne {
         driver.findElement(By.id("menu_news_viewNewsList")).click();
 
 
-       // Map<String>, List<String>
 
 
 
