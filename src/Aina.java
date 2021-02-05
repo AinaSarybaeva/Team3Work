@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class Aina {
+public class FirstPart {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/Users/apple/Desktop/sdet-java/Selenium/chromedriver");
         WebDriver driver = new ChromeDriver();
