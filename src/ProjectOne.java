@@ -126,6 +126,21 @@ public class ProjectOne {
 
             }
         }
+        
+        //logout
+
+        driver.findElement(By.id("account-job")).click();
+        driver.findElement(By.id("logoutLink")).click();
+
+        //13 Log in as Administrator
+
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
+
+        //14 Open Admis -> Announcements -> News
+
+        driver.findElement(By.id("menu_admin_viewAdminModule")).click();
+        driver.findElement(By.id("menu_news_Announcements")).click();
+        driver.findElement(By.id("menu_news_viewNewsList")).click();
 
         Thread.sleep(3000);
         driver.close();
