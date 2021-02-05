@@ -127,6 +127,12 @@ public class ProjectOne {
             }
         }
         
+        //Verify Topic and Description values are same
+        
+        Assert.assertion(driver.findeElement(By.xpath("//div[@ng-if='news.topic'][@id='header'][@class='articleTopic col s10 truncate']")).getText(), "Congratulations Anna");
+        //TODO DEscription
+        
+        
         //logout
 
         driver.findElement(By.id("account-job")).click();
