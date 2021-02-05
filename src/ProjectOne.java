@@ -114,12 +114,12 @@ public class ProjectOne {
         driver.findElement(By.xpath("//a[@data-password='kevin.mathews']")).click();
 
         //Navigate to news section
-        driver.findElement(By.xpath("//a[@class='collapsible-header waves-effect waves-orange active']")).click();
+        driver.findElement(By.xpath("//li[@id='menu_news_More']")).click();
         driver.findElement(By.xpath("//li[@id='menu_news_viewAnnouncementModule']")).click();
         driver.findElement(By.id("menu_news_viewNewsArticles")).click();
 
         //In News section verify your newly added item is present
-        List<WebElement> newItem = driver.findElements(By.xpath("//li[@class='newsList']"));
+        List<WebElement> newItem = driver.findElements(By.xpath("//div[@id='header']"));
         for (WebElement item : newItem) {
             if (item.getText().equals("Congratulations Anna")) {
                 System.out.println("Newly present item is present");

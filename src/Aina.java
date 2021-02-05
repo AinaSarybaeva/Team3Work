@@ -1,3 +1,5 @@
+package src;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,7 +37,7 @@ public class Aina {
 
         // handling attachments
         List<String> attachmentYN = new ArrayList<>();
-        for (var i=0; i<attachment.size(); i++) {
+        for (int i=0; i<attachment.size(); i++) {
             if (attachment.get(i).getAttribute("class").contains("disabled")) {     //getting the value from attribute('class')
                 attachmentYN.add("No");
             } else {
