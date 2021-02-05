@@ -90,9 +90,6 @@ public class Aina {
 
 
 
-
-
-
         Thread.sleep(3000);
         driver.close();
 
