@@ -168,17 +168,17 @@ public class ProjectOne {
        // 17. Verify row count is one less after delete
             
         String rowCountBefore = driver.findElement(By.id("frmList_ohrmListComponenttotal")).getText();
-    int rowCountBeforeInt = Integer.parseInt(rowCountBefore);
-System.out.println(rowCountBeforeInt);
-Thread.sleep(5000);
-String rowCountAfter = driver.findElement(By.id("frmList_ohrmListComponenttotal")).getText();
-int rowCountAfterInt = Integer.parseInt(rowCountAfter);
-System.out.println(rowCountAfterInt);
-if ((rowCountBeforeInt - 1) == rowCountAfterInt) {
-    System.out.println("Row count is one less!");
-} else {
-    System.out.println("Row count is the same!");
-}    
+        int rowCountBeforeInt = Integer.parseInt(rowCountBefore);
+        System.out.println(rowCountBeforeInt);
+        Thread.sleep(5000);
+        String rowCountAfter = driver.findElement(By.id("frmList_ohrmListComponenttotal")).getText();
+        int rowCountAfterInt = Integer.parseInt(rowCountAfter);
+        System.out.println(rowCountAfterInt);
+        if ((rowCountBeforeInt - 1) == rowCountAfterInt) {
+          System.out.println("Row count is one less!");
+        } else {
+          System.out.println("Row count is the same!");
+        }    
 
         Thread.sleep(3000);
         driver.close();
