@@ -129,8 +129,8 @@ public class ProjectOne {
         
         //Verify Topic and Description values are same
         
-        Assert.assertion(driver.findeElement(By.xpath("//div[@ng-if='news.topic'][@id='header'][@class='articleTopic col s10 truncate']")).getText(), "Congratulations Anna");
-        //TODO DEscription
+        Assert.asserEquals(driver.findElement(By.xpath("//div[@ng-if='news.topic'][@id='header'][@class='articleTopic col s10 truncate']")).getText(), "Congratulations Anna");
+        Assert.asserEquals(driver.findElement(By.xpath("////div[@class='html-content']//p)).getText(), 'Promotion was awarded to Anna on 1/7/2020');
         
         
         //logout
